@@ -45,6 +45,10 @@ Function Main() as void
                 'PlayDuration: 10
             } ' StreamFormat "ism" also good.
     ])
+
+   video.SetLoop(true)
+   video.PreBuffer()
+
    video.Play()
 #end if
     contentPos = 0
