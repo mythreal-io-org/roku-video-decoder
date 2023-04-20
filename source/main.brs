@@ -77,6 +77,8 @@ End Function
 			return
 		end if
 		video = CreateObject("roSGNode", "Video")
+        video.loop = true
+
 		video.reparent(scene, false)
 		content = createObject("RoSGNode", "ContentNode")
 	#if PLAYLIST
