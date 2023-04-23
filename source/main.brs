@@ -92,16 +92,22 @@ End Function
             streamFormat:"mp4",
             URL:"pkg:/images/video.mp4",
             'URL:"https://vod.grupouninter.com.br/2017/DEZ/201703381-A01.mp4"
-            'URL: "pkg:/images/Top_10_games_1minute.mov",
-            'URL: "http://localhost/Images/Top_10_games_1minute.mov"
+            'URL: "pkg:/images/Top_10_games.mov",
+            'URL: "http://localhost/Images/Top_10_games.mov"
             VideoDisableUI: true,
             IgnoreStreamErrors: true,
             FullHD: true
         })
         'child.setFields({streamFormat:"hls", URL:"https://roku.s.cpl.delvenetworks.com/media/59021fabe3b645968e382ac726cd6c7b/60b4a471ffb74809beb2f7d5a15b3193/roku_ep_111_segment_1_final-cc_mix_033015-a7ec8a288c4bcec001c118181c668de321108861.m3u8"})
 		
-        'child = content.createChild("ContentNode")
-		'child.setFields({streamFormat:"mp4", URL:"pkg:/images/video2.mp4"})
+        child = content.createChild("ContentNode")
+		child.setFields({
+            streamFormat:"mp4",
+            URL:"pkg:/images/video2.mp4",
+            VideoDisableUI: true,
+            IgnoreStreamErrors: true,
+            FullHD: true
+        })
 		
         content.nextContentIndex = 0
 		contentType = "playlist"
