@@ -91,7 +91,6 @@ End Function
 		child.setFields({
             streamFormat:"mp4",
             URL:"pkg:/images/video.mp4",
-            'URL:"https://vod.grupouninter.com.br/2017/DEZ/201703381-A01.mp4"
             'URL: "pkg:/images/Top_10_games.mov",
             'URL: "http://localhost/Images/Top_10_games.mov"
             VideoDisableUI: true,
